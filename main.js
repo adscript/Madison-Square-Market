@@ -1,29 +1,31 @@
-$(document).ready( () => {
+$(document).ready(() => {
     const $cart = $('#cart');
     const $account = $('#account');
     const $help = $('#help');
 
-    $cart.on('mouseenter', ()=>{
+    $cart.click(() => {
         $('#cartMenu').show();
     })
 
-    $cart.on('mouseleave', ()=>{
+    $cart.mouseleave(() => {
         $('#cartMenu').hide();
     })
 
-    $account.on('mouseenter', ()=> {
+    $account.click(() => {
         $('#accountMenu').show();
     })
 
-    $account.on('mouseleave', ()=>{
+    $account.mouseleave(() => {
         $('#accountMenu').hide();
     })
 
-    $help.on('mouseenter', ()=>{
+    $help.click(() => {
         $('#helpMenu').show();
     })
 
-    $help.on('mouseleave', ()=>{
+    $help.mouseleave(() => {
         $('#helpMenu').hide();
-    })    
+    })
+
+
 })
